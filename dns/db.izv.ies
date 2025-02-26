@@ -1,0 +1,19 @@
+$TTL	86400
+$ORIGIN izv.ies.
+@	IN	SOA	dns root.izv.ies. (
+			      1		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			  86400 )	; Negative Cache TTL
+
+@		IN		NS		dns
+
+dns		IN		A		192.168.57.10
+mail	IN		A		192.168.57.20
+
+@		IN		MX		10 mail
+
+smtp	IN  	CNAME		mail
+pop		IN  	CNAME		mail
+imap    IN  	CNAME		mail
