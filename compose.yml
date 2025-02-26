@@ -26,10 +26,6 @@ services:
       - "ADMIN_PASSWD=administrator"
       - "USERS=antonio:hurtado12,alvaro:garcia12,david:lopez12"
       - "DOMAIN_NAME=izv.ies"
-    # volumes:
-    # - ./data/mysql:/var/lib/mysql
-    # - ./data/vmail/:/var/vmail
-    # - ./data/log:/var/log
     networks:
       mail_net:
         ipv4_address: 192.168.57.20
