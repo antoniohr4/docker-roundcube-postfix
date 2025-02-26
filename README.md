@@ -1,0 +1,1 @@
+after clone the repo set the line "nameserver 127.0.0.1" in "/etc/resolv.conf" as first DNS server
